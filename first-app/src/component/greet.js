@@ -6,14 +6,15 @@ import React from "react";
 //         <h1>Hello Rohit</h1>
 //     )
 // }
-
-const Greet = (props) => {
+// const Greet = ({name, college}) => {
+const Greet = props => {
+  const { name, college }= props
   return (
     <div>
       <h1>
-        Hello {props.name} is student of {props.college}
+        Hello {name} is student of {college}
       </h1>
-      <p>This is mine case</p>
+      
     </div>
   );
 };
